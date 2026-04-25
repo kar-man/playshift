@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xcodebuild -version)",
+      "Bash(swift --version)",
+      "Bash(xcodebuild -list -project Playshift.xcodeproj)",
+      "Bash(xcrun simctl *)",
+      "Bash(xcodebuild -project Playshift.xcodeproj -scheme Playshift -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath build clean build)",
+      "Bash(xcrun --sdk iphonesimulator nm -gU build/Build/Products/Debug-iphonesimulator/Playshift.app/Playshift)",
+      "Bash(xcrun --sdk iphonesimulator nm -gU build/Build/Products/Debug-iphonesimulator/Playshift.app/Playshift.debug.dylib)",
+      "Bash(xcrun swift *)",
+      "Bash(xcodebuild -project Playshift.xcodeproj -scheme Playshift -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 17' -derivedDataPath build build)"
+    ]
+  }
+}
