@@ -56,3 +56,4 @@ GoogleService-Info.plist
 
 # Logs
 *.log
+.claude/
